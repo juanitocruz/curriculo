@@ -1,6 +1,7 @@
 body {
-    background-image: url('http://casadasbateriasfogaca.com.br/wp-content/uploads/2014/11/wallpaper-olimpiadas.jpg');
-    background-size: auto 100vh; /*ajustar imagem de bg no site */ 
+    backdrop-filter: blur(3px);
+    background-image: url('https://dkrn4sk0rn31v.cloudfront.net/2020/01/03075049/Ordena%C3%A7%C3%A3o-de-Cores.png');
+    background-size: 100vw auto; /*ajustar imagem de bg no site */ 
     font-family: Arial;
     height: 100vh; /*aumentar tamanho do body*/
 }
@@ -29,7 +30,7 @@ a:hover{
 
 .site-subtitle,
 .site-title {
-    color: #1C1C1C;
+    color: #BDB76B;
     text-align: center;
 }
 
