@@ -1,9 +1,30 @@
+/*Reset do CSS*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    backdrop-filter: blur(3px);
-    background-image: url('https://dkrn4sk0rn31v.cloudfront.net/2020/01/03075049/Ordena%C3%A7%C3%A3o-de-Cores.png');
+    /*backdrop-filter: blur(3px); -- desfocar imagem*/
+    background-image: url('../img/backg.jpg');
     background-size: 100vw auto; /*ajustar imagem de bg no site */ 
     font-family: Arial;
     height: 100vh; /*aumentar tamanho do body*/
+}
+
+/* Se a tela tiver pelo 400px cai carregar estes estilos */
+@media (min-width: 400px) {
+    body{
+        font-size: 14px;
+    }
+}
+
+header {
+    height: 100vh; /*ajusta altura para o tamanho da tela*/
+    display: flex;
+    justify-content: center; /*só funcionar com diplay flex*/
+    align-items: center; /*só funcionar com diplay flex*/
 }
 
 a {
@@ -15,14 +36,17 @@ a:hover{
     text-decoration: underline;
 }
 
-h1 {
+/*h1 {
     margin: 20px;
     border: 4px solid;
     box-shadow: 10px 5px 20px 2px;
-}
+}*/
 
 .menu {
     background-color: #BDB76B;
+    position: fixed;
+    top: 0;
+    width: 100vw;
 }
 
 .menu ul {
@@ -34,12 +58,26 @@ h1 {
     list-style: none;
 }
 
+.menu a {
+    display: block;
+    padding: 10px;
+}
+
 .site-subtitle,
 .site-title {
     color: #BDB76B;
     text-align: center;
 }
 
+.site-title {
+    font-size: 4em;
+}
+
 .site-subtitle {
     font-style: italic  ;
+}
+
+.img-portfolio{
+    height: 180px;
+    width: 180px;
 }
