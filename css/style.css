@@ -9,7 +9,8 @@ body {
     /*backdrop-filter: blur(3px); -- desfocar imagem*/
     background-image: url('../img/backg.jpg');
     background-size: 100vw auto; /*ajustar imagem de bg no site */ 
-    font-family: Arial;
+    color: #BDB76B;
+    font-family: 'Roboto Slab', serif;
     height: 100vh; /*aumentar tamanho do body*/
 }
 
@@ -71,13 +72,62 @@ a:hover{
 
 .site-title {
     font-size: 4em;
+    font-family: 'Satisfy', cursive;
 }
 
 .site-subtitle {
     font-style: italic  ;
+    font-family: 'Oxygen Mono', monospace;
 }
 
-.img-portfolio{
-    height: 180px;
-    width: 180px;
+.portfolio {
+    padding: 2em;
+    width: 100vh;
 }
+
+.portfolio h2 {
+    color: #BDB76B;
+    font-family: 'Oxygen Mono', monospace;
+    font-size: 3em;
+    margin-bottom: 1.5em;
+}
+
+.portfolio .grid {
+    display: grid;
+    gap: 2em;
+}
+
+@media (min-width: 560px) {
+    .portfolio .grid {
+        grid-template-columns: 240px 240px;
+    }
+}
+
+@media (min-width: 880px) {
+    .portfolio .grid {
+        grid-template-columns: repeat(2, 240px);
+        align-content: center;
+        justify-content: center;
+        /*background: pink;*/
+        height: calc(100vh - 48px - 8em);
+    }
+}
+
+.portfolio figure {
+    text-align: center;
+}
+
+.img-portfolio {
+    height: 180px;
+    width: 240px;
+    object-fit: cover;
+    object-position: left bottom;
+    border-radius: 50%
+    
+}
+
+
+
+
+
+
